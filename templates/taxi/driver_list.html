@@ -9,7 +9,7 @@
           <a href="{% url "taxi:driver-detail" pk=driver.id %}">{{ driver.username }}</a>
           ({{ driver.first_name }} {{ driver.last_name }})
           {%  if user.id == driver.id %}
-            <text style="color: #f30b0b; font-weight: 700;">(Me)</text>
+            <span style="color: #f30b0b; font-weight: 700;">(Me)</span>
           {% endif %}
         </li>
       {% endfor %}

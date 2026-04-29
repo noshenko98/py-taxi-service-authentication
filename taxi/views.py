@@ -5,6 +5,7 @@ from django.views import generic
 
 from .models import Driver, Car, Manufacturer
 
+
 class CarListView(LoginRequiredMixin, generic.ListView):
     model = Car
     paginate_by = 5
